@@ -9,6 +9,11 @@ public class Project {
 		hero.run();
 		hero.showAbilities();
 		
+		// Instantiate Villain
+		Villain villain = new Villain("Sly Man");
+		villain.run();
+		villain.steals();
+		villain.showAbilities();
 	}
 
 }
