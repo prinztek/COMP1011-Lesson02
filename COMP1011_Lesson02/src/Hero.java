@@ -1,8 +1,8 @@
 
-public class Hero {
+public class Hero extends Entity {
 	// PRIVATE PROPERTIES ============================================================
-	private int strength;
-	private int speed;
+	protected int strength;
+	protected int speed;
 	private int health;
 	
 	// PUBLIC PROPERTIES =============================================================
@@ -24,7 +24,7 @@ public class Hero {
 	// CONSTRUCTOR ========================================================================
 	public Hero(String name) {
 		this.name = name;
-		generateAbilities();
+		this.generateAbilities();
 	}
 	
 	// PUBLIC METHODS ======================================================================
